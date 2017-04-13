@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,27 +22,303 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mr. Potato Head" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zst-SN-kUD">
-                                <rect key="frame" x="4" y="28" width="367" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="body.png" translatesAutoresizingMaskIntoConstraints="NO" id="ySS-im-0qK">
-                                <rect key="frame" x="4" y="54" width="360" height="429"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-wX-fSO">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeH-3a-Red">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sAJ-8D-ZH9">
+                                                <rect key="frame" x="42" y="51" width="155" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mr. Potato Head" placeholder="Mr. " textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="I71-n3-HT2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="155" height="26"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="body" translatesAutoresizingMaskIntoConstraints="NO" id="nv7-S2-gsi">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="arms" translatesAutoresizingMaskIntoConstraints="NO" id="A2W-hB-PO9">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="ears" translatesAutoresizingMaskIntoConstraints="NO" id="94J-SM-Ldu">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="eyes" translatesAutoresizingMaskIntoConstraints="NO" id="bcX-Mj-5DW">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="glasses" translatesAutoresizingMaskIntoConstraints="NO" id="uuS-Op-3he">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="eyebrows" translatesAutoresizingMaskIntoConstraints="NO" id="cs8-6K-pcE">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="hat" translatesAutoresizingMaskIntoConstraints="NO" id="f5a-Dl-6yJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="mouth" translatesAutoresizingMaskIntoConstraints="NO" id="K54-5P-EhN">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="mustache" translatesAutoresizingMaskIntoConstraints="NO" id="vHs-io-t2B">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="shoes" translatesAutoresizingMaskIntoConstraints="NO" id="O4D-rD-zkQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="nose" translatesAutoresizingMaskIntoConstraints="NO" id="Ot5-P0-W9a">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="323.5"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="cs8-6K-pcE" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="04b-yO-iSY"/>
+                                            <constraint firstAttribute="trailing" secondItem="f5a-Dl-6yJ" secondAttribute="trailing" id="0RF-ZG-pl8"/>
+                                            <constraint firstItem="vHs-io-t2B" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="5dM-iL-7yL"/>
+                                            <constraint firstAttribute="trailing" secondItem="94J-SM-Ldu" secondAttribute="trailing" id="6s8-Kx-jfF"/>
+                                            <constraint firstAttribute="bottom" secondItem="uuS-Op-3he" secondAttribute="bottom" id="7Fg-Vs-fC2"/>
+                                            <constraint firstItem="cs8-6K-pcE" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="9x5-jg-ybP"/>
+                                            <constraint firstItem="O4D-rD-zkQ" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="AcW-Pg-Na4"/>
+                                            <constraint firstItem="Ot5-P0-W9a" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="B2I-Y0-wWc"/>
+                                            <constraint firstAttribute="trailing" secondItem="vHs-io-t2B" secondAttribute="trailing" id="Gr3-KK-Ac4"/>
+                                            <constraint firstItem="uuS-Op-3he" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="IDb-Mi-4hc"/>
+                                            <constraint firstItem="f5a-Dl-6yJ" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="JV4-eU-yev"/>
+                                            <constraint firstAttribute="trailing" secondItem="K54-5P-EhN" secondAttribute="trailing" id="Jcy-hg-P1T"/>
+                                            <constraint firstItem="K54-5P-EhN" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="JrA-E5-XJc"/>
+                                            <constraint firstAttribute="trailing" secondItem="O4D-rD-zkQ" secondAttribute="trailing" id="K3h-ru-H4V"/>
+                                            <constraint firstItem="Ot5-P0-W9a" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="K7U-9f-m13"/>
+                                            <constraint firstItem="K54-5P-EhN" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="RGY-Ae-qPD"/>
+                                            <constraint firstItem="bcX-Mj-5DW" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="TmZ-ib-gLC"/>
+                                            <constraint firstAttribute="bottom" secondItem="f5a-Dl-6yJ" secondAttribute="bottom" id="Vhu-8h-4NV"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ot5-P0-W9a" secondAttribute="bottom" id="X3S-0z-0GW"/>
+                                            <constraint firstItem="94J-SM-Ldu" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="XD2-ud-w4v"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ot5-P0-W9a" secondAttribute="trailing" id="YxM-vs-kk3"/>
+                                            <constraint firstItem="vHs-io-t2B" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="d6C-kR-NnC"/>
+                                            <constraint firstAttribute="bottom" secondItem="nv7-S2-gsi" secondAttribute="bottom" id="gXj-gq-J41"/>
+                                            <constraint firstAttribute="trailing" secondItem="bcX-Mj-5DW" secondAttribute="trailing" id="gZJ-Us-gOX"/>
+                                            <constraint firstAttribute="trailing" secondItem="uuS-Op-3he" secondAttribute="trailing" id="gtJ-a1-ymf"/>
+                                            <constraint firstAttribute="bottom" secondItem="A2W-hB-PO9" secondAttribute="bottom" id="hQe-Wi-eE5"/>
+                                            <constraint firstAttribute="bottom" secondItem="bcX-Mj-5DW" secondAttribute="bottom" id="hpV-Uu-gBf"/>
+                                            <constraint firstAttribute="bottom" secondItem="K54-5P-EhN" secondAttribute="bottom" id="iXA-IZ-XPz"/>
+                                            <constraint firstAttribute="bottom" secondItem="94J-SM-Ldu" secondAttribute="bottom" id="iZb-3b-Z0Q"/>
+                                            <constraint firstItem="bcX-Mj-5DW" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="jCF-oH-N9x"/>
+                                            <constraint firstAttribute="trailing" secondItem="A2W-hB-PO9" secondAttribute="trailing" id="lbA-ej-gwN"/>
+                                            <constraint firstItem="nv7-S2-gsi" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="mcB-Se-WWE"/>
+                                            <constraint firstItem="O4D-rD-zkQ" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="mjl-l3-U1K"/>
+                                            <constraint firstAttribute="trailing" secondItem="cs8-6K-pcE" secondAttribute="trailing" id="p1b-5x-prP"/>
+                                            <constraint firstAttribute="trailing" secondItem="nv7-S2-gsi" secondAttribute="trailing" id="pY9-BU-cD7"/>
+                                            <constraint firstItem="94J-SM-Ldu" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="qLR-SE-x8W"/>
+                                            <constraint firstItem="f5a-Dl-6yJ" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="qs2-bp-zVQ"/>
+                                            <constraint firstItem="A2W-hB-PO9" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="qvK-Ax-pp8"/>
+                                            <constraint firstItem="uuS-Op-3he" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="rum-ee-gR5"/>
+                                            <constraint firstAttribute="bottom" secondItem="O4D-rD-zkQ" secondAttribute="bottom" id="saC-h5-FHm"/>
+                                            <constraint firstItem="nv7-S2-gsi" firstAttribute="leading" secondItem="zeH-3a-Red" secondAttribute="leading" id="tO7-x1-LHc"/>
+                                            <constraint firstItem="A2W-hB-PO9" firstAttribute="top" secondItem="zeH-3a-Red" secondAttribute="top" id="vSc-0p-Suc"/>
+                                            <constraint firstAttribute="bottom" secondItem="vHs-io-t2B" secondAttribute="bottom" id="wXa-AM-sEu"/>
+                                            <constraint firstAttribute="bottom" secondItem="cs8-6K-pcE" secondAttribute="bottom" id="yMl-Dw-Mlq"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1Hf-7r-nUK">
+                                        <rect key="frame" x="19" y="323.5" width="305" height="323.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DKl-P6-kBv">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="323.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UeS-v0-jEb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="323.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TQL-2x-d7n">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="179.5"/>
+                                                                <connections>
+                                                                    <action selector="togglearmsWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="Jxx-ZE-1eE"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4uP-fk-Der">
+                                                                <rect key="frame" x="0.0" y="184.5" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleeyesWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="E2w-1p-f5l"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v7m-MS-LjH">
+                                                                <rect key="frame" x="0.0" y="220.5" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleeyebrowsWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="M57-57-nBk"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RFC-Dc-Hbd">
+                                                                <rect key="frame" x="0.0" y="256.5" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleglassesWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="3Ky-fc-1R8"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sWO-Mq-8TB">
+                                                                <rect key="frame" x="0.0" y="292.5" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="togglehatWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="DeP-SR-4BM"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="N0c-zh-FV0">
+                                                        <rect key="frame" x="54" y="0.0" width="71" height="323.5"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Arms" placeholder="Arms" textAlignment="natural" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="rB1-O1-pzT">
+                                                                <rect key="frame" x="0.0" y="0.0" width="71" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Eyes" textAlignment="natural" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="KDu-a4-NDF">
+                                                                <rect key="frame" x="0.0" y="76.5" width="71" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Eyebrows" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZKD-Ya-Afs">
+                                                                <rect key="frame" x="0.0" y="153" width="71" height="18"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Glasses" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nzg-7Q-UOb">
+                                                                <rect key="frame" x="0.0" y="230" width="71" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u48-fE-gly">
+                                                                <rect key="frame" x="0.0" y="306.5" width="71" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7gN-Yi-xwL">
+                                                <rect key="frame" x="175" y="0.0" width="130" height="323.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xX9-3h-NIi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="323.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wrh-Ce-bXc">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleearsWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="kEa-Vc-B9F"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JRu-Fb-Ou2">
+                                                                <rect key="frame" x="0.0" y="73" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="togglemoustacheWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="x9J-1j-aFj"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Eff-PN-dUp">
+                                                                <rect key="frame" x="0.0" y="146.5" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="togglemouthWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="TKm-tt-Z9z"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AOJ-11-jKC">
+                                                                <rect key="frame" x="0.0" y="219.5" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="togglenoseWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="zEQ-QF-HWK"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pFT-UD-yaM">
+                                                                <rect key="frame" x="0.0" y="292.5" width="51" height="31"/>
+                                                                <connections>
+                                                                    <action selector="toggleshoesWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="dP2-J2-tLL"/>
+                                                                </connections>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Rf-b0-Ufz">
+                                                        <rect key="frame" x="54" y="0.0" width="76" height="323.5"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ears" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lfg-e3-rcN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="76" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Moustache" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udH-Xv-PCg">
+                                                                <rect key="frame" x="0.0" y="76.5" width="76" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mouth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ksf-4V-Cca">
+                                                                <rect key="frame" x="0.0" y="153.5" width="76" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nose" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sAL-8r-80e">
+                                                                <rect key="frame" x="0.0" y="230" width="76" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Shoes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0mK-0U-9Rt">
+                                                                <rect key="frame" x="0.0" y="306.5" width="76" height="17"/>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.91585228698405796" green="1" blue="0.68627991699068946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.89005829020000005" green="0.80586575839999997" blue="0.19545812870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="PJf-wX-fSO" secondAttribute="trailing" id="6h2-5c-S2X"/>
+                            <constraint firstItem="PJf-wX-fSO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Twl-C2-dsY"/>
+                            <constraint firstItem="PJf-wX-fSO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eSI-MW-tRR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PJf-wX-fSO" secondAttribute="bottom" id="rtX-4E-nuk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="arms" destination="A2W-hB-PO9" id="wEg-3w-6Hc"/>
+                        <outlet property="body" destination="nv7-S2-gsi" id="f9M-cs-A56"/>
+                        <outlet property="ears" destination="94J-SM-Ldu" id="thF-0U-qfu"/>
+                        <outlet property="eyebrows" destination="cs8-6K-pcE" id="Ndd-he-7js"/>
+                        <outlet property="eyes" destination="bcX-Mj-5DW" id="1q4-cP-lGS"/>
+                        <outlet property="glasses" destination="uuS-Op-3he" id="xVf-lw-agz"/>
+                        <outlet property="hat" destination="f5a-Dl-6yJ" id="lV5-X8-niW"/>
+                        <outlet property="mouth" destination="K54-5P-EhN" id="eQJ-Hi-tLK"/>
+                        <outlet property="mustache" destination="vHs-io-t2B" id="2Yf-Nl-7NU"/>
+                        <outlet property="nose" destination="Ot5-P0-W9a" id="1Hs-cE-e2U"/>
+                        <outlet property="shoes" destination="O4D-rD-zkQ" id="tdm-g6-PaY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="184.80000000000001" y="130.88455772113943"/>
         </scene>
     </scenes>
     <resources>
-        <image name="body.png" width="367" height="428"/>
+        <image name="arms" width="367" height="428"/>
+        <image name="body" width="367" height="428"/>
+        <image name="ears" width="367" height="428"/>
+        <image name="eyebrows" width="367" height="428"/>
+        <image name="eyes" width="367" height="428"/>
+        <image name="glasses" width="367" height="428"/>
+        <image name="hat" width="367" height="428"/>
+        <image name="mouth" width="367" height="428"/>
+        <image name="mustache" width="367" height="428"/>
+        <image name="nose" width="367" height="428"/>
+        <image name="shoes" width="367" height="428"/>
     </resources>
 </document>
